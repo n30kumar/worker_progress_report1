@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Worker Progress Report</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page" id="page1">
+    <header class="header">
+      <div>
+        <img src="aaa.png" alt="WCB Logo" class="logo" />
+        <div class="contact-info">
+          <p>333 Broadway, Winnipeg, MB R3C 4W3</p>
+          <p>Phone: (204) 954-4321</p>
+          <p>Toll Free: 1-855-954-4321</p>
+          <p>wcb.mb.ca</p>
+        </div>
+      </div>
+      <div class="report-meta">
+        <h2>Worker Progress Report</h2>
+        <p>Claim No. <span id="claim-number">20042047</span></p>
+        <div class="box">WP</div>
+      </div>
+    </header>
+
+    <section class="section">
+      <p><span class="blue" contenteditable="true">Madeleine Willson</span> provided the following updates in relation to their claim:</p>
+    </section>
+
+    <section class="section boxed">
+      <h3>Return to Work</h3>
+      <div class="input-group">
+        <label>Select one:</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" id="noTimeMissed" /> I have not missed time from work</label>
+          <label><input type="checkbox" id="notReturned" /> I have not returned to work</label>
+          <label><input type="checkbox" id="returnedToWork" checked /> I returned to work on:
+            <input type="date" id="returnDate" value="2024-03-15" />
+          </label>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label>I am working:</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" /> Full duties, regular hours</label>
+          <label><input type="checkbox" /> Full duties, reduced hours</label>
+          <label><input type="checkbox" /> Modified duties, regular hours</label>
+          <label><input type="checkbox" checked /> Modified duties, reduced hours</label>
+          <label><input type="text" placeholder="Other:" /></label>
+        </div>
+      </div>
+
+      <label>My return to work is going: <span class="blue" contenteditable="true">Terrible. Testing Testing</span></label>
+      <label>I expect to return to work on: <input type="date" /></label>
+      <label>I have the following concerns about returning to work:</label>
+      <textarea></textarea>
+
+      <label>I was most recently in contact with: <input type="text" /> on <input type="date" /></label>
+    </section>
+
+    <section class="section boxed">
+      <h3>Recovery</h3>
+      <div class="checkbox-group">
+        <label><input type="checkbox" /> I have not fully recovered</label>
+        <label><input type="checkbox" checked /> I have fully recovered</label>
+      </div>
+      <label>I have provided the following comments about my recovery:</label>
+      <textarea></textarea>
+    </section>
+
+    <footer class="footer">
+      <p>Worker App ID: <span>712041</span></p>
+      <p>Submitted: March 19, 2024 19:21</p>
+      <p>Page 1 of 3</p>
+    </footer>
+  </div>
+
+  <!-- Page 2 and 3 to follow similarly -->
+
+  <script src="script.js"></script>
+</body>
+</html>
